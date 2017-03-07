@@ -1,0 +1,2 @@
+defmodule RummageEctoExample do
+end
