@@ -28,7 +28,22 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
-config :rummage_ecto, Rummage.Ecto, [
+
+config :logger, :console,
+  level: :error
+
+config :rummage_ecto, Rummage.Ecto,[
   default_repo: RummageEctoExample.Repo,
   default_per_page: 2,
 ]
+
+config :rummage_ecto_example, ecto_repos: [RummageEctoExample.Repo]
+
+config :rummage_ecto_example, RummageEctoExample.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  username: "postgres",
+  password: "",
+  database: "rummage_ecto_example",
+  hostname: "localhost",
+  pool: Ecto.Adapters.SQL.Sandbox
+
