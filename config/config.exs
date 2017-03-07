@@ -46,4 +46,3 @@ config :rummage_ecto_example, RummageEctoExample.Repo,
   database: "rummage_ecto_example",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
-
