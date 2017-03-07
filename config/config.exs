@@ -28,3 +28,7 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
+config :rummage_ecto, Rummage.Ecto, [
+  default_repo: RummageEctoExample.Repo,
+  default_per_page: 2,
+]
