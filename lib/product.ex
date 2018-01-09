@@ -5,8 +5,10 @@ defmodule RummageEctoExample.Product do
   schema "products" do
     field :name, :string
     field :price, :float
+    field :available, :boolean
+
     belongs_to :category, RummageEctoExample.Category
 
-    timestamps
+    timestamps()
   end
 end

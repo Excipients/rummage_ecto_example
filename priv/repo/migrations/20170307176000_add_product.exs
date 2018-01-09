@@ -5,9 +5,11 @@ defmodule RummageEctoExample.Repo.Migrations.AddProduct do
     create table(:products) do
       add :name, :string
       add :price, :float
+      add :available, :boolean
+
       add :category_id, references(:categories)
 
-      timestamps
+      timestamps()
     end
   end
 end
