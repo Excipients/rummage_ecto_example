@@ -18,4 +18,5 @@ config :rummage_ecto_example, RummageEctoExample.Repo,
   password: System.get_env("POSTGRES_PASSWORD"),
   database: "rummage_ecto_example",
   hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
+  pool: Ecto.Adapters.SQL.Sandbox,
+  timeout: :infinity
