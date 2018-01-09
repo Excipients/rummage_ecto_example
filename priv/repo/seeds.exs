@@ -2,7 +2,7 @@ alias RummageEctoExample.{Repo, Category, Product}
 
 # Starting the app to start the Repo
 Mix.Task.run "app.start", []
-Repo.start_link
+Repo.start_link()
 
 # Populates the database with 4 Categories, each has a parent besides the
 # first one.
