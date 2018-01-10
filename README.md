@@ -27,7 +27,7 @@ This app currently uses `rummage_ecto, 1.3.0-rc.0`
 
 - Start up a console and play with `rummage_ecto`
 
-## Things to Try out:
+## Things to Try out (in the console):
 
 - Basic Rummage call:
 
