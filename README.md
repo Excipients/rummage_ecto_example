@@ -2,6 +2,8 @@
 
 This app demonstrates the usage of `Rummage.Ecto`
 
+This app currently uses `rummage_ecto, 1.3.0-rc.0`
+
 ## Setup
 
 - Git clone the repository
