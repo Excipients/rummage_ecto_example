@@ -7,6 +7,6 @@ defmodule Mix.Tasks.Seed do
   end
 
   def seed(:dev) do
-    Mix.Task.run "run priv/repo/seeds.exs"
+    Mix.Task.run "run ../priv/repo/seeds.exs"
   end
 end

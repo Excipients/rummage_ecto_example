@@ -14,7 +14,7 @@ config :rummage_ecto_example, ecto_repos: [RummageEctoExample.Repo]
 
 config :rummage_ecto_example, RummageEctoExample.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: System.get_env("POSTGRES_USERNAME"),
+  username: System.get_env("POSTGRES_USER"),
   password: System.get_env("POSTGRES_PASSWORD"),
   database: "rummage_ecto_example",
   hostname: "localhost",

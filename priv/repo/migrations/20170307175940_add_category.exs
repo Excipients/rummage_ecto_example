@@ -3,11 +3,14 @@ defmodule RummageEctoExample.Repo.Migrations.AddCategory do
 
   def change do
     create table(:categories) do
-      add :category_name, :string
-
-      add :category_id, references(:categories)
+      add :name, :string
+      add :description, :text
+      add :parent_category_id, references(:categories)
 
       timestamps()
     end
+
+    create unique_index(:categories, [:name])
+    create index(:categories, [:parent_category_id])
   end
 end

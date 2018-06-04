@@ -1,11 +1,16 @@
 defmodule RummageEctoExample.Category do
-  use Ecto.Schema
-  use Rummage.Ecto, per_page: 10
+  @moduledoc """
+  This is an example usage of `Rummage.Ecto.Schema`. This module has `id` as
+  `primary_key` and has two fields and a `belongs_to` association.
+  """
+
+  use Rummage.Ecto.Schema, per_page: 10
 
   schema "categories" do
-    field :category_name, :string
+    field :name, :string
+    field :description, :string
 
-    belongs_to :category, RummageEctoExample.Category
+    belongs_to :parent_category, __MODULE__
 
     timestamps()
   end
