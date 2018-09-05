@@ -4,7 +4,7 @@ defmodule RummageEctoExample.Mixfile do
   def project do
     [app: :rummage_ecto_example,
      version: "0.2.0",
-     elixir: "~> 1.4",
+     elixir: "~> 1.6.5",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps()]
@@ -15,7 +15,9 @@ defmodule RummageEctoExample.Mixfile do
   end
 
   defp deps do
-    [{:postgrex, ">= 0.0.0"},
-      {:rummage_ecto, "~> 1.3.0-rc.0"}]
+    [
+      {:postgrex, ">= 0.0.0"},
+      {:rummage_ecto, "~> 2.0.0-rc.0"}
+    ]
   end
 end
