@@ -1,11 +1,12 @@
 defmodule RummageEctoExample.Category do
   use Ecto.Schema
-  use Rummage.Ecto, per_page: 10
+  use Rummage.Ecto.Schema
 
   schema "categories" do
-    field :category_name, :string
+    field :name, :string
+    field :description, :string
 
-    belongs_to :category, RummageEctoExample.Category
+    belongs_to :parent_category, __MODULE__
 
     timestamps()
   end
